@@ -5,7 +5,7 @@
         <h3 class="card-title">What would you call your tasks?</h3>
         <p>Get a glimpse of what would action-buttons and cards would look like.</p>
         <div class="input-group mb-3">
-          <input type="text" [formControl]="fundsSetupForm" class="form-control" placeholder="Example: Ticket, Task, Micro Goal..." aria-label="Work Item Label" aria-describedby="basic-addon1" />
+          <input type="text" [formControl]="taskSetupForm" class="form-control" placeholder="Example: Ticket, Task, Micro Goal..." aria-label="Work Item Label" aria-describedby="basic-addon1" />
         </div>
       </form>
 
@@ -13,14 +13,14 @@
         <h5>Preview</h5>
         <div class="mt-2">
           <h6>Create button</h6>
-          <button type="button" class="btn btn-primary">Create New {{ fundsSetupForm.value }}</button>
+          <button type="button" class="btn btn-primary">Create New {{ taskSetupForm.value }}</button>
         </div>
         <div class="mt-4">
           <h6>Card</h6>
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Apply a new filter for the User plan page</h5>
-              <span>{{ fundsSetupForm.value }}#9042</span>
+              <span>{{ taskSetupForm.value }}#9042</span>
             </div>
             <div class="card-footer d-flex flex-row-reverse">
               <div class="meta-data">

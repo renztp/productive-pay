@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FundsSetupViewComponent } from './funds-setup.view.component';
+import { FundsSetupViewComponent } from './task-setup.view.component';
 
 describe('FundsSetupViewComponent', () => {
   let component: FundsSetupViewComponent;
