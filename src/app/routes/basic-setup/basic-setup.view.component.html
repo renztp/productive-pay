@@ -1,0 +1,20 @@
+<app-container [topIndent]="indentedContainer">
+  <div class="funds card">
+    <div class="card-body">
+      <form class="descrip-row mb-5">
+        <h3 class="card-title">Can you tell me about yourself?</h3>
+        <p>I need a small set of information from you to show to the app</p>
+        <div class="input-group mb-3">
+          <input type="text" [formControl]="profileName" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1" />
+        </div>
+      </form>
+    </div>
+    <div class="card-footer">
+      <div class="d-flex flex-row-reverse">
+        <a routerLink="/" type="button" class="btn btn-primary">
+          Continue
+        </a>
+      </div>
+    </div>
+  </div>
+</app-container>

@@ -1,0 +1,11 @@
+:host {
+  .router-wrapper {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    margin: 3em 0 0 0;
+  }
+
+  .view-wrapper {
+    padding: 0 2em;
+  }
+}

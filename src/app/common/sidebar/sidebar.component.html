@@ -1,0 +1,29 @@
+<ul class="outer-links">
+  <li>
+    <button
+		type="button"
+		class="btn btn-outline-primary"
+		(click)="collapse.toggle()"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+    Boards
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+      <ul class="inner-links">
+        <li>
+          <a routerLink="taskboard">Home</a>
+        </li>
+        <li>
+          <a [routerLink]="['/taskboard', 2]">Ticket Board</a>
+        </li>
+      </ul>
+    </div>
+	</button>
+  </li>
+  <li>
+    <button class="btn btn-outline-primary" routerLink="/monitor">Monitor</button>
+  </li>
+  <li>
+    <button class="btn btn-outline-primary" routerLink="/settings">Settings</button>
+  </li>
+</ul>
